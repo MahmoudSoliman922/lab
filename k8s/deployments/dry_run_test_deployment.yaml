@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: test-dry-run
+  name: test-dry-run
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: test-dry-run
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: test-dry-run
+    spec:
+      containers:
+      - image: httpd
+        name: httpd

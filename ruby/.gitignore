@@ -1,0 +1,3 @@
+*.db
+notebooks/*.db
+notebooks/.ipynb_checkpoints/

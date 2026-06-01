@@ -1,0 +1,10 @@
+services:
+  lab:
+    build: .
+    ports:
+      - '8888:8888'
+    volumes:
+      - .:/lab/ruby
+    working_dir: /lab/ruby
+    environment:
+      - BUNDLE_GEMFILE=/lab/ruby/Gemfile

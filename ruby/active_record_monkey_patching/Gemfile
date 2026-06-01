@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+
+# Ruby 3.1.4 caps us at the Rails 7.1.x line (7.2 needs Ruby 3.1.0+ but is less
+# battle-tested with sqlite3 1.x; 8.0 needs Ruby 3.2.2+).
+gem 'activerecord', '~> 7.1.0'
+gem 'sqlite3', '~> 1.7'
